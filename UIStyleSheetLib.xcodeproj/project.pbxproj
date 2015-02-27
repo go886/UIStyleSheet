@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8CF5097119ECD0DD00250784 /* UIStyleSheetLibAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8CF5097219ECD0DD00250784 /* Build configuration list for PBXAggregateTarget "UIStyleSheetLibAggregate" */;
+			buildPhases = (
+				8CF5097519ECD1B800250784 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UIStyleSheetLibAggregate;
+			productName = UIStyleSheetAggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		8C1B046B1A2C4607005A4A9C /* UIStyleSheetFileMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1B04691A2C4607005A4A9C /* UIStyleSheetFileMonitor.h */; };
+		8C1B046C1A2C4607005A4A9C /* UIStyleSheetFileMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B046A1A2C4607005A4A9C /* UIStyleSheetFileMonitor.m */; };
+		8C50E42B19EE5042005C738F /* UIStyleSheetLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C50E42A19EE5042005C738F /* UIStyleSheetLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C7FDAC31A53EE3C00BE30E7 /* UIStyleSheet+insider.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C7FDAC11A53EE3C00BE30E7 /* UIStyleSheet+insider.h */; };
+		8C7FDAC41A53EE3C00BE30E7 /* UIStyleSheet+insider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7FDAC21A53EE3C00BE30E7 /* UIStyleSheet+insider.m */; };
+		8CF508DA19ECCF8200250784 /* SkinMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508D019ECCF8200250784 /* SkinMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF508DB19ECCF8200250784 /* SkinMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508D119ECCF8200250784 /* SkinMgr.m */; };
+		8CF508DC19ECCF8200250784 /* UIRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508D219ECCF8200250784 /* UIRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF508DD19ECCF8200250784 /* UIRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508D319ECCF8200250784 /* UIRenderer.m */; };
+		8CF508DE19ECCF8200250784 /* UIStyleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508D419ECCF8200250784 /* UIStyleSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF508DF19ECCF8200250784 /* UIStyleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508D519ECCF8200250784 /* UIStyleSheet.m */; };
+		8CF508E019ECCF8200250784 /* UIStyleSheetConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508D619ECCF8200250784 /* UIStyleSheetConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF508E119ECCF8200250784 /* UIStyleSheetConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508D719ECCF8200250784 /* UIStyleSheetConverter.m */; };
+		8CF508E219ECCF8200250784 /* UIStyleSheetSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508D819ECCF8200250784 /* UIStyleSheetSwizzler.h */; };
+		8CF508E319ECCF8200250784 /* UIStyleSheetSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508D919ECCF8200250784 /* UIStyleSheetSwizzler.m */; };
+		8CF5090F19ECCF8600250784 /* UIActionSheet+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508E519ECCF8600250784 /* UIActionSheet+styleSheet.h */; };
+		8CF5091019ECCF8600250784 /* UIActionSheet+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508E619ECCF8600250784 /* UIActionSheet+styleSheet.m */; };
+		8CF5091119ECCF8600250784 /* UIActivityIndicatorView+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508E719ECCF8600250784 /* UIActivityIndicatorView+styleSheet.h */; };
+		8CF5091219ECCF8600250784 /* UIActivityIndicatorView+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508E819ECCF8600250784 /* UIActivityIndicatorView+styleSheet.m */; };
+		8CF5091319ECCF8600250784 /* UIButton+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508E919ECCF8600250784 /* UIButton+styleSheet.h */; };
+		8CF5091419ECCF8600250784 /* UIButton+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508EA19ECCF8600250784 /* UIButton+styleSheet.m */; };
+		8CF5091519ECCF8600250784 /* UIControl+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508EB19ECCF8600250784 /* UIControl+styleSheet.h */; };
+		8CF5091619ECCF8600250784 /* UIControl+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508EC19ECCF8600250784 /* UIControl+styleSheet.m */; };
+		8CF5091719ECCF8600250784 /* UIImageView+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508ED19ECCF8600250784 /* UIImageView+styleSheet.h */; };
+		8CF5091819ECCF8600250784 /* UIImageView+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508EE19ECCF8600250784 /* UIImageView+styleSheet.m */; };
+		8CF5091919ECCF8600250784 /* UILabel+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508EF19ECCF8600250784 /* UILabel+styleSheet.h */; };
+		8CF5091A19ECCF8600250784 /* UILabel+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508F019ECCF8600250784 /* UILabel+styleSheet.m */; };
+		8CF5091B19ECCF8600250784 /* UINavigationBar+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508F119ECCF8600250784 /* UINavigationBar+styleSheet.h */; };
+		8CF5091C19ECCF8600250784 /* UINavigationBar+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508F219ECCF8600250784 /* UINavigationBar+styleSheet.m */; };
+		8CF5091D19ECCF8600250784 /* UIPageControl+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508F319ECCF8600250784 /* UIPageControl+styleSheet.h */; };
+		8CF5091E19ECCF8600250784 /* UIPageControl+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508F419ECCF8600250784 /* UIPageControl+styleSheet.m */; };
+		8CF5091F19ECCF8600250784 /* UIProgressView+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508F519ECCF8600250784 /* UIProgressView+styleSheet.h */; };
+		8CF5092019ECCF8600250784 /* UIProgressView+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508F619ECCF8600250784 /* UIProgressView+styleSheet.m */; };
+		8CF5092119ECCF8600250784 /* UIScrollView+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508F719ECCF8600250784 /* UIScrollView+styleSheet.h */; };
+		8CF5092219ECCF8600250784 /* UIScrollView+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508F819ECCF8600250784 /* UIScrollView+styleSheet.m */; };
+		8CF5092319ECCF8600250784 /* UISearchBar+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508F919ECCF8600250784 /* UISearchBar+styleSheet.h */; };
+		8CF5092419ECCF8600250784 /* UISearchBar+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508FA19ECCF8600250784 /* UISearchBar+styleSheet.m */; };
+		8CF5092519ECCF8600250784 /* UISegmentedControl+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508FB19ECCF8600250784 /* UISegmentedControl+styleSheet.h */; };
+		8CF5092619ECCF8600250784 /* UISegmentedControl+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508FC19ECCF8600250784 /* UISegmentedControl+styleSheet.m */; };
+		8CF5092719ECCF8600250784 /* UISlider+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508FD19ECCF8600250784 /* UISlider+styleSheet.h */; };
+		8CF5092819ECCF8600250784 /* UISlider+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF508FE19ECCF8600250784 /* UISlider+styleSheet.m */; };
+		8CF5092919ECCF8600250784 /* UIStepper+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF508FF19ECCF8600250784 /* UIStepper+styleSheet.h */; };
+		8CF5092A19ECCF8600250784 /* UIStepper+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090019ECCF8600250784 /* UIStepper+styleSheet.m */; };
+		8CF5092B19ECCF8600250784 /* UISwitch+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090119ECCF8600250784 /* UISwitch+styleSheet.h */; };
+		8CF5092C19ECCF8600250784 /* UISwitch+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090219ECCF8600250784 /* UISwitch+styleSheet.m */; };
+		8CF5092D19ECCF8600250784 /* UITabBar+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090319ECCF8600250784 /* UITabBar+styleSheet.h */; };
+		8CF5092E19ECCF8600250784 /* UITabBar+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090419ECCF8600250784 /* UITabBar+styleSheet.m */; };
+		8CF5092F19ECCF8600250784 /* UITableView+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090519ECCF8600250784 /* UITableView+styleSheet.h */; };
+		8CF5093019ECCF8600250784 /* UITableView+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090619ECCF8600250784 /* UITableView+styleSheet.m */; };
+		8CF5093119ECCF8600250784 /* UITableViewCell+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090719ECCF8600250784 /* UITableViewCell+styleSheet.h */; };
+		8CF5093219ECCF8600250784 /* UITableViewCell+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090819ECCF8600250784 /* UITableViewCell+styleSheet.m */; };
+		8CF5093319ECCF8600250784 /* UITextField+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090919ECCF8600250784 /* UITextField+styleSheet.h */; };
+		8CF5093419ECCF8600250784 /* UITextField+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090A19ECCF8600250784 /* UITextField+styleSheet.m */; };
+		8CF5093519ECCF8600250784 /* UITextView+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090B19ECCF8600250784 /* UITextView+styleSheet.h */; };
+		8CF5093619ECCF8600250784 /* UITextView+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090C19ECCF8600250784 /* UITextView+styleSheet.m */; };
+		8CF5093719ECCF8600250784 /* UIToolbar+styleSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5090D19ECCF8600250784 /* UIToolbar+styleSheet.h */; };
+		8CF5093819ECCF8600250784 /* UIToolbar+styleSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5090E19ECCF8600250784 /* UIToolbar+styleSheet.m */; };
+		8CF5094219ECD00700250784 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5094119ECD00700250784 /* main.m */; };
+		8CF5094519ECD00700250784 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5094419ECD00700250784 /* AppDelegate.m */; };
+		8CF5094819ECD00700250784 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5094719ECD00700250784 /* FirstViewController.m */; };
+		8CF5094B19ECD00700250784 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5094A19ECD00700250784 /* SecondViewController.m */; };
+		8CF5094E19ECD00700250784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5094C19ECD00700250784 /* Main.storyboard */; };
+		8CF5095019ECD00700250784 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5094F19ECD00700250784 /* Images.xcassets */; };
+		8CF5095319ECD00700250784 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5095119ECD00700250784 /* LaunchScreen.xib */; };
+		8CF5096A19ECD06700250784 /* More.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5096719ECD06700250784 /* More.m */; };
+		8CF5096B19ECD06700250784 /* MsgCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5096919ECD06700250784 /* MsgCenterViewController.m */; };
+		8CF5096E19ECD06F00250784 /* VipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5096D19ECD06F00250784 /* VipViewController.m */; };
+		8CF5097019ECD07C00250784 /* skin in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5096F19ECD07C00250784 /* skin */; };
+		8CF5097619ECD29C00250784 /* UIStyleSheetLib.framework in Resources */ = {isa = PBXBuildFile; fileRef = 8CF508B619ECCE8700250784 /* UIStyleSheetLib.framework */; };
+		8CF5097719ECD2A100250784 /* UIStyleSheetLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF508B619ECCE8700250784 /* UIStyleSheetLib.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C1B04691A2C4607005A4A9C /* UIStyleSheetFileMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleSheetFileMonitor.h; sourceTree = "<group>"; };
+		8C1B046A1A2C4607005A4A9C /* UIStyleSheetFileMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStyleSheetFileMonitor.m; sourceTree = "<group>"; };
+		8C50E42A19EE5042005C738F /* UIStyleSheetLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleSheetLib.h; sourceTree = "<group>"; };
+		8C7FDAC11A53EE3C00BE30E7 /* UIStyleSheet+insider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStyleSheet+insider.h"; sourceTree = "<group>"; };
+		8C7FDAC21A53EE3C00BE30E7 /* UIStyleSheet+insider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStyleSheet+insider.m"; sourceTree = "<group>"; };
+		8CF508B619ECCE8700250784 /* UIStyleSheetLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIStyleSheetLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF508BA19ECCE8700250784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF508D019ECCF8200250784 /* SkinMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinMgr.h; sourceTree = "<group>"; };
+		8CF508D119ECCF8200250784 /* SkinMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkinMgr.m; sourceTree = "<group>"; };
+		8CF508D219ECCF8200250784 /* UIRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRenderer.h; sourceTree = "<group>"; };
+		8CF508D319ECCF8200250784 /* UIRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRenderer.m; sourceTree = "<group>"; };
+		8CF508D419ECCF8200250784 /* UIStyleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleSheet.h; sourceTree = "<group>"; };
+		8CF508D519ECCF8200250784 /* UIStyleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStyleSheet.m; sourceTree = "<group>"; };
+		8CF508D619ECCF8200250784 /* UIStyleSheetConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleSheetConverter.h; sourceTree = "<group>"; };
+		8CF508D719ECCF8200250784 /* UIStyleSheetConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStyleSheetConverter.m; sourceTree = "<group>"; };
+		8CF508D819ECCF8200250784 /* UIStyleSheetSwizzler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIStyleSheetSwizzler.h; sourceTree = "<group>"; };
+		8CF508D919ECCF8200250784 /* UIStyleSheetSwizzler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIStyleSheetSwizzler.m; sourceTree = "<group>"; };
+		8CF508E519ECCF8600250784 /* UIActionSheet+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508E619ECCF8600250784 /* UIActionSheet+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508E719ECCF8600250784 /* UIActivityIndicatorView+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508E819ECCF8600250784 /* UIActivityIndicatorView+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508E919ECCF8600250784 /* UIButton+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508EA19ECCF8600250784 /* UIButton+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508EB19ECCF8600250784 /* UIControl+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508EC19ECCF8600250784 /* UIControl+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508ED19ECCF8600250784 /* UIImageView+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508EE19ECCF8600250784 /* UIImageView+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508EF19ECCF8600250784 /* UILabel+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508F019ECCF8600250784 /* UILabel+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508F119ECCF8600250784 /* UINavigationBar+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508F219ECCF8600250784 /* UINavigationBar+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508F319ECCF8600250784 /* UIPageControl+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPageControl+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508F419ECCF8600250784 /* UIPageControl+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPageControl+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508F519ECCF8600250784 /* UIProgressView+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508F619ECCF8600250784 /* UIProgressView+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508F719ECCF8600250784 /* UIScrollView+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508F819ECCF8600250784 /* UIScrollView+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508F919ECCF8600250784 /* UISearchBar+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508FA19ECCF8600250784 /* UISearchBar+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508FB19ECCF8600250784 /* UISegmentedControl+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508FC19ECCF8600250784 /* UISegmentedControl+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508FD19ECCF8600250784 /* UISlider+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+styleSheet.h"; sourceTree = "<group>"; };
+		8CF508FE19ECCF8600250784 /* UISlider+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+styleSheet.m"; sourceTree = "<group>"; };
+		8CF508FF19ECCF8600250784 /* UIStepper+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090019ECCF8600250784 /* UIStepper+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090119ECCF8600250784 /* UISwitch+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwitch+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090219ECCF8600250784 /* UISwitch+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwitch+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090319ECCF8600250784 /* UITabBar+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090419ECCF8600250784 /* UITabBar+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090519ECCF8600250784 /* UITableView+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090619ECCF8600250784 /* UITableView+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090719ECCF8600250784 /* UITableViewCell+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090819ECCF8600250784 /* UITableViewCell+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090919ECCF8600250784 /* UITextField+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090A19ECCF8600250784 /* UITextField+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090B19ECCF8600250784 /* UITextView+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090C19ECCF8600250784 /* UITextView+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5090D19ECCF8600250784 /* UIToolbar+styleSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+styleSheet.h"; sourceTree = "<group>"; };
+		8CF5090E19ECCF8600250784 /* UIToolbar+styleSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+styleSheet.m"; sourceTree = "<group>"; };
+		8CF5093D19ECD00700250784 /* UIStyleSheetLibDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStyleSheetLibDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF5094019ECD00700250784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF5094119ECD00700250784 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8CF5094319ECD00700250784 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8CF5094419ECD00700250784 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8CF5094619ECD00700250784 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8CF5094719ECD00700250784 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8CF5094919ECD00700250784 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8CF5094A19ECD00700250784 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8CF5094D19ECD00700250784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CF5094F19ECD00700250784 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CF5095219ECD00700250784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8CF5096619ECD06700250784 /* More.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = More.h; sourceTree = "<group>"; };
+		8CF5096719ECD06700250784 /* More.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = More.m; sourceTree = "<group>"; };
+		8CF5096819ECD06700250784 /* MsgCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MsgCenterViewController.h; sourceTree = "<group>"; };
+		8CF5096919ECD06700250784 /* MsgCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MsgCenterViewController.m; sourceTree = "<group>"; };
+		8CF5096C19ECD06F00250784 /* VipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VipViewController.h; sourceTree = "<group>"; };
+		8CF5096D19ECD06F00250784 /* VipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VipViewController.m; sourceTree = "<group>"; };
+		8CF5096F19ECD07C00250784 /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CF508B219ECCE8700250784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF5093A19ECD00700250784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF5097719ECD2A100250784 /* UIStyleSheetLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CF508AC19ECCE8700250784 = {
+			isa = PBXGroup;
+			children = (
+				8CF508B819ECCE8700250784 /* UIStyleSheet */,
+				8CF5093E19ECD00700250784 /* UIStyleSheetDemo */,
+				8CF508B719ECCE8700250784 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF508B719ECCE8700250784 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF508B619ECCE8700250784 /* UIStyleSheetLib.framework */,
+				8CF5093D19ECD00700250784 /* UIStyleSheetLibDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CF508B819ECCE8700250784 /* UIStyleSheet */ = {
+			isa = PBXGroup;
+			children = (
+				8CF508E419ECCF8600250784 /* ui */,
+				8CF508CF19ECCF8200250784 /* core */,
+				8CF508B919ECCE8700250784 /* Supporting Files */,
+				8C50E42A19EE5042005C738F /* UIStyleSheetLib.h */,
+			);
+			path = UIStyleSheet;
+			sourceTree = "<group>";
+		};
+		8CF508B919ECCE8700250784 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF508BA19ECCE8700250784 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF508CF19ECCF8200250784 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				8CF508D019ECCF8200250784 /* SkinMgr.h */,
+				8CF508D119ECCF8200250784 /* SkinMgr.m */,
+				8CF508D219ECCF8200250784 /* UIRenderer.h */,
+				8CF508D319ECCF8200250784 /* UIRenderer.m */,
+				8CF508D419ECCF8200250784 /* UIStyleSheet.h */,
+				8CF508D519ECCF8200250784 /* UIStyleSheet.m */,
+				8CF508D619ECCF8200250784 /* UIStyleSheetConverter.h */,
+				8CF508D719ECCF8200250784 /* UIStyleSheetConverter.m */,
+				8CF508D819ECCF8200250784 /* UIStyleSheetSwizzler.h */,
+				8CF508D919ECCF8200250784 /* UIStyleSheetSwizzler.m */,
+				8C1B04691A2C4607005A4A9C /* UIStyleSheetFileMonitor.h */,
+				8C1B046A1A2C4607005A4A9C /* UIStyleSheetFileMonitor.m */,
+				8C7FDAC11A53EE3C00BE30E7 /* UIStyleSheet+insider.h */,
+				8C7FDAC21A53EE3C00BE30E7 /* UIStyleSheet+insider.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		8CF508E419ECCF8600250784 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				8CF508E519ECCF8600250784 /* UIActionSheet+styleSheet.h */,
+				8CF508E619ECCF8600250784 /* UIActionSheet+styleSheet.m */,
+				8CF508E719ECCF8600250784 /* UIActivityIndicatorView+styleSheet.h */,
+				8CF508E819ECCF8600250784 /* UIActivityIndicatorView+styleSheet.m */,
+				8CF508E919ECCF8600250784 /* UIButton+styleSheet.h */,
+				8CF508EA19ECCF8600250784 /* UIButton+styleSheet.m */,
+				8CF508EB19ECCF8600250784 /* UIControl+styleSheet.h */,
+				8CF508EC19ECCF8600250784 /* UIControl+styleSheet.m */,
+				8CF508ED19ECCF8600250784 /* UIImageView+styleSheet.h */,
+				8CF508EE19ECCF8600250784 /* UIImageView+styleSheet.m */,
+				8CF508EF19ECCF8600250784 /* UILabel+styleSheet.h */,
+				8CF508F019ECCF8600250784 /* UILabel+styleSheet.m */,
+				8CF508F119ECCF8600250784 /* UINavigationBar+styleSheet.h */,
+				8CF508F219ECCF8600250784 /* UINavigationBar+styleSheet.m */,
+				8CF508F319ECCF8600250784 /* UIPageControl+styleSheet.h */,
+				8CF508F419ECCF8600250784 /* UIPageControl+styleSheet.m */,
+				8CF508F519ECCF8600250784 /* UIProgressView+styleSheet.h */,
+				8CF508F619ECCF8600250784 /* UIProgressView+styleSheet.m */,
+				8CF508F719ECCF8600250784 /* UIScrollView+styleSheet.h */,
+				8CF508F819ECCF8600250784 /* UIScrollView+styleSheet.m */,
+				8CF508F919ECCF8600250784 /* UISearchBar+styleSheet.h */,
+				8CF508FA19ECCF8600250784 /* UISearchBar+styleSheet.m */,
+				8CF508FB19ECCF8600250784 /* UISegmentedControl+styleSheet.h */,
+				8CF508FC19ECCF8600250784 /* UISegmentedControl+styleSheet.m */,
+				8CF508FD19ECCF8600250784 /* UISlider+styleSheet.h */,
+				8CF508FE19ECCF8600250784 /* UISlider+styleSheet.m */,
+				8CF508FF19ECCF8600250784 /* UIStepper+styleSheet.h */,
+				8CF5090019ECCF8600250784 /* UIStepper+styleSheet.m */,
+				8CF5090119ECCF8600250784 /* UISwitch+styleSheet.h */,
+				8CF5090219ECCF8600250784 /* UISwitch+styleSheet.m */,
+				8CF5090319ECCF8600250784 /* UITabBar+styleSheet.h */,
+				8CF5090419ECCF8600250784 /* UITabBar+styleSheet.m */,
+				8CF5090519ECCF8600250784 /* UITableView+styleSheet.h */,
+				8CF5090619ECCF8600250784 /* UITableView+styleSheet.m */,
+				8CF5090719ECCF8600250784 /* UITableViewCell+styleSheet.h */,
+				8CF5090819ECCF8600250784 /* UITableViewCell+styleSheet.m */,
+				8CF5090919ECCF8600250784 /* UITextField+styleSheet.h */,
+				8CF5090A19ECCF8600250784 /* UITextField+styleSheet.m */,
+				8CF5090B19ECCF8600250784 /* UITextView+styleSheet.h */,
+				8CF5090C19ECCF8600250784 /* UITextView+styleSheet.m */,
+				8CF5090D19ECCF8600250784 /* UIToolbar+styleSheet.h */,
+				8CF5090E19ECCF8600250784 /* UIToolbar+styleSheet.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		8CF5093E19ECD00700250784 /* UIStyleSheetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8CF5096F19ECD07C00250784 /* skin */,
+				8CF5096C19ECD06F00250784 /* VipViewController.h */,
+				8CF5096D19ECD06F00250784 /* VipViewController.m */,
+				8CF5096619ECD06700250784 /* More.h */,
+				8CF5096719ECD06700250784 /* More.m */,
+				8CF5096819ECD06700250784 /* MsgCenterViewController.h */,
+				8CF5096919ECD06700250784 /* MsgCenterViewController.m */,
+				8CF5094319ECD00700250784 /* AppDelegate.h */,
+				8CF5094419ECD00700250784 /* AppDelegate.m */,
+				8CF5094619ECD00700250784 /* FirstViewController.h */,
+				8CF5094719ECD00700250784 /* FirstViewController.m */,
+				8CF5094919ECD00700250784 /* SecondViewController.h */,
+				8CF5094A19ECD00700250784 /* SecondViewController.m */,
+				8CF5094C19ECD00700250784 /* Main.storyboard */,
+				8CF5094F19ECD00700250784 /* Images.xcassets */,
+				8CF5095119ECD00700250784 /* LaunchScreen.xib */,
+				8CF5093F19ECD00700250784 /* Supporting Files */,
+			);
+			path = UIStyleSheetDemo;
+			sourceTree = "<group>";
+		};
+		8CF5093F19ECD00700250784 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF5094019ECD00700250784 /* Info.plist */,
+				8CF5094119ECD00700250784 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8CF508B319ECCE8700250784 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF508DE19ECCF8200250784 /* UIStyleSheet.h in Headers */,
+				8CF508DC19ECCF8200250784 /* UIRenderer.h in Headers */,
+				8C50E42B19EE5042005C738F /* UIStyleSheetLib.h in Headers */,
+				8CF508E019ECCF8200250784 /* UIStyleSheetConverter.h in Headers */,
+				8CF508DA19ECCF8200250784 /* SkinMgr.h in Headers */,
+				8CF5092B19ECCF8600250784 /* UISwitch+styleSheet.h in Headers */,
+				8CF5091919ECCF8600250784 /* UILabel+styleSheet.h in Headers */,
+				8CF5093119ECCF8600250784 /* UITableViewCell+styleSheet.h in Headers */,
+				8CF5091F19ECCF8600250784 /* UIProgressView+styleSheet.h in Headers */,
+				8CF5091719ECCF8600250784 /* UIImageView+styleSheet.h in Headers */,
+				8CF5093519ECCF8600250784 /* UITextView+styleSheet.h in Headers */,
+				8CF5091319ECCF8600250784 /* UIButton+styleSheet.h in Headers */,
+				8CF5091D19ECCF8600250784 /* UIPageControl+styleSheet.h in Headers */,
+				8CF5092719ECCF8600250784 /* UISlider+styleSheet.h in Headers */,
+				8CF5093319ECCF8600250784 /* UITextField+styleSheet.h in Headers */,
+				8C1B046B1A2C4607005A4A9C /* UIStyleSheetFileMonitor.h in Headers */,
+				8CF5091119ECCF8600250784 /* UIActivityIndicatorView+styleSheet.h in Headers */,
+				8CF5092D19ECCF8600250784 /* UITabBar+styleSheet.h in Headers */,
+				8CF5091B19ECCF8600250784 /* UINavigationBar+styleSheet.h in Headers */,
+				8CF5091519ECCF8600250784 /* UIControl+styleSheet.h in Headers */,
+				8CF5092519ECCF8600250784 /* UISegmentedControl+styleSheet.h in Headers */,
+				8CF5092F19ECCF8600250784 /* UITableView+styleSheet.h in Headers */,
+				8CF508E219ECCF8200250784 /* UIStyleSheetSwizzler.h in Headers */,
+				8CF5092319ECCF8600250784 /* UISearchBar+styleSheet.h in Headers */,
+				8CF5092119ECCF8600250784 /* UIScrollView+styleSheet.h in Headers */,
+				8CF5090F19ECCF8600250784 /* UIActionSheet+styleSheet.h in Headers */,
+				8CF5092919ECCF8600250784 /* UIStepper+styleSheet.h in Headers */,
+				8C7FDAC31A53EE3C00BE30E7 /* UIStyleSheet+insider.h in Headers */,
+				8CF5093719ECCF8600250784 /* UIToolbar+styleSheet.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8CF508B519ECCE8700250784 /* UIStyleSheetLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF508C919ECCE8700250784 /* Build configuration list for PBXNativeTarget "UIStyleSheetLib" */;
+			buildPhases = (
+				8CF508B119ECCE8700250784 /* Sources */,
+				8CF508B219ECCE8700250784 /* Frameworks */,
+				8CF508B319ECCE8700250784 /* Headers */,
+				8CF508B419ECCE8700250784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIStyleSheetLib;
+			productName = UIStyleSheet;
+			productReference = 8CF508B619ECCE8700250784 /* UIStyleSheetLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CF5093C19ECD00700250784 /* UIStyleSheetLibDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF5096019ECD00700250784 /* Build configuration list for PBXNativeTarget "UIStyleSheetLibDemo" */;
+			buildPhases = (
+				8CF5093919ECD00700250784 /* Sources */,
+				8CF5093A19ECD00700250784 /* Frameworks */,
+				8CF5093B19ECD00700250784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIStyleSheetLibDemo;
+			productName = UIStyleSheetDemo;
+			productReference = 8CF5093D19ECD00700250784 /* UIStyleSheetLibDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF508AD19ECCE8700250784 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = go886;
+				TargetAttributes = {
+					8CF508B519ECCE8700250784 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					8CF5093C19ECD00700250784 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					8CF5097119ECD0DD00250784 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 8CF508B019ECCE8700250784 /* Build configuration list for PBXProject "UIStyleSheetLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CF508AC19ECCE8700250784;
+			productRefGroup = 8CF508B719ECCE8700250784 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CF508B519ECCE8700250784 /* UIStyleSheetLib */,
+				8CF5093C19ECD00700250784 /* UIStyleSheetLibDemo */,
+				8CF5097119ECD0DD00250784 /* UIStyleSheetLibAggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CF508B419ECCE8700250784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF5093B19ECD00700250784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF5097619ECD29C00250784 /* UIStyleSheetLib.framework in Resources */,
+				8CF5094E19ECD00700250784 /* Main.storyboard in Resources */,
+				8CF5097019ECD07C00250784 /* skin in Resources */,
+				8CF5095319ECD00700250784 /* LaunchScreen.xib in Resources */,
+				8CF5095019ECD00700250784 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CF5097519ECD1B800250784 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF508B119ECCE8700250784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF5091A19ECCF8600250784 /* UILabel+styleSheet.m in Sources */,
+				8CF5093819ECCF8600250784 /* UIToolbar+styleSheet.m in Sources */,
+				8CF5093619ECCF8600250784 /* UITextView+styleSheet.m in Sources */,
+				8CF5092419ECCF8600250784 /* UISearchBar+styleSheet.m in Sources */,
+				8CF508DD19ECCF8200250784 /* UIRenderer.m in Sources */,
+				8CF508DF19ECCF8200250784 /* UIStyleSheet.m in Sources */,
+				8CF508E319ECCF8200250784 /* UIStyleSheetSwizzler.m in Sources */,
+				8CF5092C19ECCF8600250784 /* UISwitch+styleSheet.m in Sources */,
+				8CF5093219ECCF8600250784 /* UITableViewCell+styleSheet.m in Sources */,
+				8CF5091E19ECCF8600250784 /* UIPageControl+styleSheet.m in Sources */,
+				8C1B046C1A2C4607005A4A9C /* UIStyleSheetFileMonitor.m in Sources */,
+				8CF5092019ECCF8600250784 /* UIProgressView+styleSheet.m in Sources */,
+				8CF5092A19ECCF8600250784 /* UIStepper+styleSheet.m in Sources */,
+				8CF5091219ECCF8600250784 /* UIActivityIndicatorView+styleSheet.m in Sources */,
+				8C7FDAC41A53EE3C00BE30E7 /* UIStyleSheet+insider.m in Sources */,
+				8CF508E119ECCF8200250784 /* UIStyleSheetConverter.m in Sources */,
+				8CF5093019ECCF8600250784 /* UITableView+styleSheet.m in Sources */,
+				8CF5092619ECCF8600250784 /* UISegmentedControl+styleSheet.m in Sources */,
+				8CF508DB19ECCF8200250784 /* SkinMgr.m in Sources */,
+				8CF5092E19ECCF8600250784 /* UITabBar+styleSheet.m in Sources */,
+				8CF5091C19ECCF8600250784 /* UINavigationBar+styleSheet.m in Sources */,
+				8CF5091819ECCF8600250784 /* UIImageView+styleSheet.m in Sources */,
+				8CF5091019ECCF8600250784 /* UIActionSheet+styleSheet.m in Sources */,
+				8CF5092219ECCF8600250784 /* UIScrollView+styleSheet.m in Sources */,
+				8CF5091419ECCF8600250784 /* UIButton+styleSheet.m in Sources */,
+				8CF5092819ECCF8600250784 /* UISlider+styleSheet.m in Sources */,
+				8CF5091619ECCF8600250784 /* UIControl+styleSheet.m in Sources */,
+				8CF5093419ECCF8600250784 /* UITextField+styleSheet.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF5093919ECD00700250784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF5096A19ECD06700250784 /* More.m in Sources */,
+				8CF5094B19ECD00700250784 /* SecondViewController.m in Sources */,
+				8CF5096E19ECD06F00250784 /* VipViewController.m in Sources */,
+				8CF5094519ECD00700250784 /* AppDelegate.m in Sources */,
+				8CF5094819ECD00700250784 /* FirstViewController.m in Sources */,
+				8CF5094219ECD00700250784 /* main.m in Sources */,
+				8CF5096B19ECD06700250784 /* MsgCenterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8CF5094C19ECD00700250784 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF5094D19ECD00700250784 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CF5095119ECD00700250784 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF5095219ECD00700250784 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CF508C719ECCE8700250784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8CF508C819ECCE8700250784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CF508CA19ECCE8700250784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UIStyleSheet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = UIStyleSheetLib;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8CF508CB19ECCE8700250784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = UIStyleSheet/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = UIStyleSheetLib;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8CF5096119ECD00700250784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UIStyleSheetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = UIStyleSheetLibDemo;
+			};
+			name = Debug;
+		};
+		8CF5096219ECD00700250784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UIStyleSheetDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = UIStyleSheetLibDemo;
+			};
+			name = Release;
+		};
+		8CF5097319ECD0DD00250784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = UIStyleSheetLibAggregate;
+			};
+			name = Debug;
+		};
+		8CF5097419ECD0DD00250784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = UIStyleSheetLibAggregate;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF508B019ECCE8700250784 /* Build configuration list for PBXProject "UIStyleSheetLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF508C719ECCE8700250784 /* Debug */,
+				8CF508C819ECCE8700250784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF508C919ECCE8700250784 /* Build configuration list for PBXNativeTarget "UIStyleSheetLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF508CA19ECCE8700250784 /* Debug */,
+				8CF508CB19ECCE8700250784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF5096019ECD00700250784 /* Build configuration list for PBXNativeTarget "UIStyleSheetLibDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF5096119ECD00700250784 /* Debug */,
+				8CF5096219ECD00700250784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF5097219ECD0DD00250784 /* Build configuration list for PBXAggregateTarget "UIStyleSheetLibAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF5097319ECD0DD00250784 /* Debug */,
+				8CF5097419ECD0DD00250784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CF508AD19ECCE8700250784 /* Project object */;
+}

@@ -1,0 +1,187 @@
+@bkColorTop: #0F0C0E;
+@bkColorBottom: #E6E6E6;
+@bkColor: rgb(100,12,123);
+@tintColor: rgb(255,1,2);
+@textColor: red;
+@inputTextColor: red;
+@ButtonBkColor: #FCFCFC;
+@borderColor: #A2A2A2;
+@borderWidth: 1;
+@lineColor: red;
+
+* {
+	font: system,15;
+  font-color: @textColor;
+  text-color: @textColor;
+}
+
+
+/*导航*/
+UINavigationBar {
+    font: system,18;
+    bar-background-color: @bkColor;
+}
+UIBarButtonItem {
+    font: system,10;
+}
+
+
+/*
+UINavigationItemButtonView {
+    background-color: red;
+}*/
+
+
+
+
+/*tab*/
+UITabBar {
+	/*
+    background-color-top: @primaryBackgroundColorTop;
+    background-color-bottom: @primaryBackgroundColorBottom;
+    bar-tint-color: @primaryBackgroundTintColor;*/
+    background-color: @bkColor;
+    tint-color: @tintColor;
+
+}
+UITabBarButtonLabel {
+	   font: system,10;
+     background-color :  clear;
+}
+
+
+UIToolbarTextButton {
+	background-color: clear;
+	width: 300px;
+}
+UIToolbar {
+	background-color: @bkColor;
+}
+
+
+
+/*UISegmentedControl*/
+UISegmentedControl {
+    background-color: @bkColorTop;
+    background-color-selected: @bkColorBottom;
+    border-color: @borderColor;
+    border-width: @borderWidth;
+    corner-radius: 4;
+    font: system,15;
+    font-color: @textColor;
+    text-shadow-color: clear;
+}
+
+
+
+UITextField {
+    placeholder: "测试";
+    height: 37;
+    font: HelveticaNeue,18;
+    border-style: rounded;
+    vertical-align: center;
+}
+UITextView {
+  font: system,10;
+  border-color: @borderColor;
+  border-width: 1px;
+  corner-radius: 5px;
+  background-color: @bkColor;
+}
+
+UISwitch {
+    on-tint-color: @tintColor;
+}
+
+UILabel {
+    background-color :  clear;
+}
+
+
+UIButton {
+    border-color: @borderColor;
+    border-width: @borderWidth;
+    corner-radius: 4;
+    background-color: @bkColor;
+    clips: true;
+    image: $skin/icon.png;
+    shadow-color: black;
+    shadow-offset: 1, 2;
+    shadow-opacity: 0.5;
+    shadow-radius: 4;
+}
+UIButton#skinbtn {
+    image: ;
+    text-color: red;
+    y: 50px;
+    width: 80px;
+}
+
+UIPageControl {
+  tint-color :  @tintColor;
+  current-page-indicator-tint-color :  black;
+}
+
+UISearchBar {
+  placeholder: "搜索";
+  font: system,8;
+  bar-background-color: gray;
+  bar-background-color-top: #F9F9F9;
+  bar-background-color-bottom: #E6E6E6;
+}
+UISearchBarTextField {
+  font: system,15;
+  text-color: @inputTextColor;
+}
+
+UIProgressView {
+  progress-tint-color: @tintColor;
+  track-tint-color: gray;
+}
+
+UISlider {
+  minimum-track-tint-color: @tintColor;
+  /*
+  maximum-track-tint-color: gray;
+  */
+  thumb-image: $skin/favon.png;
+  thumb-image-selected: $skin/favon.png;
+  /*
+  maximum-track-image: $skin/favon.png;
+  */
+}
+UIActivityIndicatorView {
+  color: @tintColor;
+}
+UIStepper {
+}
+
+
+
+/*UITableView*/
+UITableView {
+  background-color :  @bkColor;
+  row-height: 50px;
+  separator-color: @lineColor;
+  separator-style: single-line;
+}
+
+UITableViewCell {
+	selected-style: blue;
+	background-color: white;
+	background-color-top: @bkColorTop;
+  background-color-bottom: @bkColorBottom;
+}
+UITableViewLabel {
+	font: system,12;
+}
+UITableViewLabel#detail {
+	font: system,8;
+	text-color: red;
+}
+UIButton UITableViewCell,
+UIButton UITableViewCellDetailDisclosureView{
+	image: $skin/favon.png;
+}
+
+
